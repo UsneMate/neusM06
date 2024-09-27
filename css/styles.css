@@ -31,6 +31,11 @@
   main {
     display: block;
   }
+
+  .flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
   
   /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -61,10 +66,6 @@
    * 2. Correct the odd `em` font sizing in all browsers.
    */
   
-  pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-  }
   
   /* Text-level semantics
      ========================================================================== */
