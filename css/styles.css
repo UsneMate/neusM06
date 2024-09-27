@@ -27,14 +27,36 @@
   /**
    * Render the `main` element consistently in IE.
    */
+
+  nav{
+    background-color: rgb(219, 230, 66);
+    
+  }
+
+  ul{
+    display:flex;
+    list-style: none;
+    font-size: 1.5em;
+  }
+
+  li{
+    padding-right: 30px;
+  }
   
   main {
     display: block;
   }
 
+  section{
+    margin: 10px;
+    width: 33%;
+    border:1px solid black;
+    text-align: center;
+  }
+
   .flex-container {
     display: flex;
-    background-color: DodgerBlue;
+    background-color: rgb(26, 226, 213);
   }
   
   /**
