@@ -23,6 +23,7 @@ line-height: 1.15; /* 1 */
 body {
 margin: 0;
 background-color: aqua;
+min-width: 100%;
 }
 
 /**
@@ -42,6 +43,10 @@ header{
     border: 1px solid black;
 }
 
+.logo img{
+    width: 100%;
+}
+
 .titol{
     width: 75%;
     text-align: left;
@@ -53,6 +58,7 @@ display: block;
 margin: 0 auto;
 width: 90%;
 border: 1px solid red;
+height: 300px;
 }
 
 .flex-container{
@@ -85,6 +91,13 @@ margin: 0.67em 0;
 a{
     color:white;
     text-decoration: none;
+}
+
+footer{
+    width: 90%;
+    height: 100px;
+    background-color: #3c3c3b;
+    margin: 0 auto;
 }
 
 /* Grouping content
@@ -190,9 +203,9 @@ top: -0.5em;
 * Remove the border on images inside links in IE 10.
 */
 
-img {
+/*img {
 border-style: none;
-}
+}*/
 
 /* Forms
     ========================================================================== */
