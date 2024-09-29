@@ -8,10 +8,17 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+* { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 html {
 line-height: 1.15; /* 1 */
 -webkit-text-size-adjust: 100%; /* 2 */
 }
+
 
 /* Sections
     ========================================================================== */
@@ -23,7 +30,6 @@ line-height: 1.15; /* 1 */
 body {
 margin: 0;
 background-color: aqua;
-min-width: 100%;
 }
 
 /**
@@ -34,7 +40,7 @@ header{
     display: flex;
     flex-direction: row;
     border: 1px solid black;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -54,17 +60,15 @@ header{
 }
 
 main {
-display: block;
-margin: 0 auto;
-width: 90%;
-border: 1px solid red;
-height: 300px;
+    display: block;
+    margin: 0 auto;
+    width: 95%;
 }
 
 .flex-container{
-display:flex;
-flex-direction: row;
-justify-content: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 section{
@@ -76,6 +80,23 @@ section{
     margin:2rem;
     padding: 1rem;
     height: 200px;
+}
+
+.dadespersonals, .experiencia, .educacio{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: left;
+    line-height: 1.5;
+    color: white;
+}
+
+article{
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none; /* Elimina les boles */
 }
 
 /**
