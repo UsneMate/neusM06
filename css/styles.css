@@ -41,7 +41,6 @@ header{
     width: 95%;
     margin: 15px auto;
     align-items: center;
-    border:1px solid blue;
     
 }
 
@@ -55,14 +54,12 @@ header{
 .logo img{
     width: 100%; /* Evita que la imatge sobrepassi l'amplada del contenidor */
     object-fit: contain; /* Manté la proporció de la imatge dins del contenidor */
-    border:1px solid blue;
 }
 
 .titol{
     text-align: left;
     width: 100%;
-    margin-left: 0;
-    border:1px solid blue;
+    margin-left: 30px;
 }
 
 main {
