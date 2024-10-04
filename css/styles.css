@@ -88,9 +88,15 @@ section{
     text-align: center; /* Center text within section */
 }
 
+section:hover, section>a:hover{
+    background-color: #3c3c3b;
+    color: orangered;
+}
+
 a h2{
     margin: 0; /* Remove any default margins to help with centering */
 }
+
 
 .dadespersonals, .experiencia, .educacio{
     width: 100%;
@@ -103,6 +109,12 @@ a h2{
     text-align: left; /* Ajusta el text a l'esquerra */
     align-items: flex-start; /* Evita el centrat horitzontal */
 }
+
+.dadespersonals:hover, .experiencia:hover, .educacio:hover{
+    background-color: blue;
+    color:white;
+}
+
 
 article{
     padding: 1rem;
