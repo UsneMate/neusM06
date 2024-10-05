@@ -19,6 +19,11 @@ padding: 0;
 box-sizing: border-box;
 }
 
+/* Remove balls from all ul elements */
+ul {
+    list-style-type: none;
+}
+
 /*Define a default family of web content*/
 body {
     width: 100%;
@@ -29,8 +34,6 @@ body {
     font-variation-settings:"wdth" 100;
     position: relative;
     min-height: 100vh;
-
-    border:1px solid red;
 }
 
 /* Render the `main` element consistently in IE.
@@ -41,6 +44,15 @@ main {
     display: block;
     margin: 0 auto;
     width: 95%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 15px auto;
+    align-items: center;
+    border: 2px solid black;   
 }
 
 footer{
@@ -55,22 +67,13 @@ footer{
     bottom: 0;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 15px auto;
-    align-items: center;
-    
-}
-
-
-
+/*Header elements*/
 .logo{
-    width: 25%;
+    width: 20%;
     display: flex;
     text-align: center;
     padding-left: 30px;
+    color:black;
 }  
 
 .logo img{
@@ -80,42 +83,56 @@ header{
 
 .titol{
     text-align: left;
-    width: 100%;
+    width: 60%;
     margin-left: 30px;
 }
 
-.flex-container{
+.xarxes{
+    width: 20%;
+    border:1px solid red;
+    height: 50px;
+}
+
+.xarxes ul {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+
+
+/*.flex-container{
     width: 95%;
     display:flex;
     flex-direction: row;
     justify-content:space-around;
     margin-top: 25px;
-}
+}*/
 
-section{
+/*section{
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
+    justify-content: center;
+    align-items: center;
     background-color: blue;
     border:2px solid rgb(55, 214, 26);
     color: white;
     height: 200px;
-    text-align: center; /* Center text within section */
-}
+    text-align: center;
+}*/
 
-section:hover, section>a:hover{
+/*section:hover, section>a:hover{
     background-color: #3c3c3b;
     color: orangered;
-}
+}*/
 
-a h2{
-    margin: 0; /* Remove any default margins to help with centering */
-}
+/*a h2{
+    margin: 0;
+}*/
 
 
-.dadespersonals, .experiencia, .educacio{
+/*.dadespersonals, .experiencia, .educacio{
     width: 100%;
     margin: 20px auto;
     padding: 30px;
@@ -123,22 +140,18 @@ a h2{
     height: auto;
     line-height: 1.5;
     color: white;
-    text-align: left; /* Ajusta el text a l'esquerra */
-    align-items: flex-start; /* Evita el centrat horitzontal */
-}
+    text-align: left;
+    align-items: flex-start;
+}*/
 
-.dadespersonals:hover, .experiencia:hover, .educacio:hover{
+/*.dadespersonals:hover, .experiencia:hover, .educacio:hover{
     background-color: blue;
     color:white;
-}
+}*/
 
 
 article{
     padding: 1rem;
-}
-
-ul {
-    list-style-type: none; /* Elimina les boles */
 }
 
 /**
@@ -146,14 +159,14 @@ ul {
 * `article` contexts in Chrome, Firefox, and Safari.
 */
 
-h1 {
+/*h1 {
     font-size: 3em;
 }
 
 a{
     color:white;
     text-decoration: none;
-}
+}*/
 
 /* Grouping content
     ========================================================================== */
