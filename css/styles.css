@@ -5,44 +5,66 @@
 
 /**
  * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+ * 2. Prevent adjustments of font size after orientation changes in iOS.*/
+html {
+line-height: 1.15; /* 1 */
+-webkit-text-size-adjust: 100%; /* 2 */
+}
 
+/*Apply the border and padding included to the sizes*/
+/*Remove margins and paddings by default*/
 * { 
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 
-html {
-line-height: 1.15; /* 1 */
--webkit-text-size-adjust: 100%; /* 2 */
-}
-
-
-/* Sections
-    ========================================================================== */
-
-/**
-* Remove the margin in all browsers.
-*/
-
+/*Define a default family of web content*/
 body {
-margin: 0;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    position: relative;
+    min-height: 100vh;
+
+    border:1px solid red;
 }
 
-/**
-* Render the `main` element consistently in IE.
+/* Render the `main` element consistently in IE.
 */
+/*Define properties of the different elements of the structure*/
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+}
+
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundary-color);
+    color: var(--theme-color);
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
 
 header{
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 100%;
     margin: 15px auto;
     align-items: center;
     
 }
+
+
 
 .logo{
     width: 25%;
@@ -62,12 +84,6 @@ header{
     margin-left: 30px;
 }
 
-main {
-    display: block;
-    margin: 0 auto;
-    width: 95%;
-}
-
 .flex-container{
     width: 95%;
     display:flex;
@@ -83,6 +99,7 @@ section{
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     background-color: blue;
+    border:2px solid rgb(55, 214, 26);
     color: white;
     height: 200px;
     text-align: center; /* Center text within section */
@@ -136,13 +153,6 @@ h1 {
 a{
     color:white;
     text-decoration: none;
-}
-
-footer{
-    width: 90%;
-    height: 100px;
-    background-color: #3c3c3b;
-    margin: 0 auto;
 }
 
 /* Grouping content
