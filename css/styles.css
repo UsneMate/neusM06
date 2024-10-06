@@ -51,7 +51,7 @@ body {
 main {
     display: block;
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
     min-height: calc(100vh - 80px); /* Resta l'alçada del peu de pàgina */
     overflow-y: auto; /* Permet el desplaçament vertical */
 }
@@ -127,54 +127,75 @@ h1{
     margin-right: 50px;
 }
 
+.navxarxes li a i:hover{
+    color:var(--secundary-color);
+    transition: 1s;
+
+}
 
 /* Content CSS*/
 .navmenu ul{
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
     width: 100%;
+    height: 60px;
+    background-color: var(--complementari-color);
+    padding: 10px;
+    justify-content: center;
 }
 
 .navmenu ul li{
     display: flex;
     flex-direction: row;
-    width: 20%;
-    height:80px;
+    width: 15%;
+    height:40px;
     justify-content: center;
     align-items: center;
     background-color: var(--theme-color);
     text-align: center;
-    border-radius: 30px;
-    border:2.5px solid var(--complementari-color);
     margin-right: 20px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 .navmenu ul li:hover{
     background-color: var(--complementari-color);
-    transition: 1.5s;
-    border:none;
+    transition: 1s;
 }
 
 .navmenu ul li a{
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.8em;
     text-transform:uppercase;
     color: var(--complementari-color);
 }
 
 .navmenu ul li a:hover{
     color: var(--theme-color);
+    background-color: var(--complementari-color);
+    transition: 1s;
+    font-weight: bold;
 }
 
-/*section:hover, section>a:hover{
-    background-color: #3c3c3b;
-    color: orangered;
-}*/
+section{
+    width: 90%;
+    margin:20px auto;
+    text-align: center;
+}
 
-/*a h2{
-    margin: 0;
-}*/
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.2em;
+    padding: 15px;
+}
+
+.dadespersonals p{
+    padding: 10px;
+    font-size: 1.5em;
+}
 
 
 /*.dadespersonals, .experiencia, .educacio{
@@ -244,9 +265,9 @@ font-size: 1em; /* 2 */
 * Remove the gray background on active links in IE 10.
 */
 
-a {
+/*a {
 background-color: transparent;
-}
+}*/
 
 /**
 * 1. Remove the bottom border in Chrome 57-
