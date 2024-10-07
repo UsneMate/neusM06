@@ -222,7 +222,7 @@ h3{
     padding: 15px 15px 15px 10px;
 }
 
-article img {
+article img, .image-container {
     width: 100%;
     height: auto;
     margin-top: 10px;
