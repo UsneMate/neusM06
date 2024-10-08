@@ -1,0 +1,54 @@
+/* Flexbox container */
+section.flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    min-height: 100vh;
+}
+
+/* Generic style for articles */
+section.flexBox article{
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* First row: 2 items */
+section.flexBox .first-row{
+    flex: 1 1 48%;
+}
+
+/* Second row: 3 items */
+section.flexBox .second-row{
+    flex: 1 1 30%;
+}
+
+/* Last row: 1 item */
+section.flexBox .third-row{
+    flex: 1 1 100%;
+}
+
+/*background colors*/
+.un{
+    background-color: yellow;
+}
+
+.dos{
+    background-color: rgb(255, 77, 0);
+}
+
+.tres{
+    background-color: rgb(52, 241, 14);
+}
+
+.cuatre{
+    background-color: rgb(14, 243, 224);
+}
+
+.cinc{
+    background-color: rgb(80, 40, 214);
+}
+
+.sis{
+    background-color: rgb(159, 13, 84);
+}
