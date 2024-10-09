@@ -1,0 +1,40 @@
+/* Styles for iPads in landscape mode */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    .esquerra{
+        width: 70%;
+    }
+    .titol{
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .navxarxes ul{
+        justify-content: start;
+        padding-left: 50px;
+    }
+
+    .logo{
+        width: 30%;
+        padding-right: 30px;
+    }
+
+    .navxarxes li a i:hover{
+        color:var(--secundary-color);
+        transition: 1s;
+    
+    }
+
+    section.flexBox .first-row{
+        flex: 1 1 40%;
+    }
+    
+    /* Second row: 3 items */
+    section.flexBox .second-row{
+        flex: 1 1 30%;
+    }
+    
+    /* Last row: 1 item */
+    section.flexBox .third-row{
+        flex: 1 1 100%;
+    }
+}
