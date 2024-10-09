@@ -1,6 +1,6 @@
-/* Styles for iPads in portrait mode */
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-
+/*Samsung S20 Ultra screen*/
+@media only screen and (max-width: 412px) {
+    
     .esquerra{
         width: 70%;
     }
@@ -32,5 +32,4 @@
     section.flexBox .first-row{
         flex: 1 1 40%;
     }
-
 }
