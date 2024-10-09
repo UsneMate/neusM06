@@ -1,0 +1,40 @@
+@media print {
+    /* Ajustar contingut a mida A4 */
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
+    }
+
+    /* Estils d'impressió */
+    body {
+        font-size: 12pt; /* Assegura una mida de lletra llegible */
+        color: black; /* Assegura que el text es veu bé en blanc i negre */
+        background: none; /* Elimina fons de color o imatges que no són necessàries */
+    }
+
+    .articles{
+        flex-direction: column;
+    }
+
+    article{
+        width: 100%;
+        border:none;
+        margin:12px;
+    }
+
+    /*amago els elements de navegació i capçaleres*/
+    header, footer, nav, .navmenu, .navxarxes {
+        display: none; /* Amaga elements de navegació o capçaleres que no vols a la impressió */
+    }
+
+    
+    section.flexBox article {
+        width: 100%;
+        border: 1px solid #000;
+        margin: 5mm 0;
+    }
+
+    .un, .dos, .tres, .cuatre, .cinc, .sis{
+        border:1mm solid black  !important;
+    }
+}
